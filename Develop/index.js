@@ -9,7 +9,9 @@ const questions = ["What is the title of your README?",
 "Add installation insctructions for your README", 
 "Add usage information for your README", 
 "Add contribution guidelines for your README", 
-"Add test instructions for your README"];
+"Add test instructions for your README",
+"Enter your GitHub username",
+"Enter your email address"];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -50,10 +52,27 @@ function init() {
                 type: 'input',
                 message: questions[5],
                 name: 'instruction'
+            },
+            {
+                type: 'list',
+                message: "Choose which licenses to apply.",
+                choices: ["None","MIT", "BSD", "IBM", "ISC"],
+                name: 'licenses'
+            },
+            {
+                type: 'input',
+                message: questions[6],
+                name: 'username'
+            },
+            {
+                type: 'input',
+                message: questions[7],
+                name: 'email'
             }
+
         ])
         .then((data) =>{
-        writeToFile("README.md", data);
+        writeToFile("sample-README.md", data);
         })
         
 }
