@@ -3,20 +3,20 @@
 
 //Individual license badge code was referenced from https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba, using shields.io for badge generation.
 function renderLicenseBadge(license) {
-  if("None" || !license){
+  if(license==="None"){
     return "";
   }
   else{
-    if("MIT"){
+    if(license==="MIT"){
       return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
     }
-    if("BSD"){
+    if(license==="BSD"){
       return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
     }
-    if("IBM"){
+    if(license==="IBM"){
       return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
     }
-    if("ISC"){
+    if(license==="ISC"){
       return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
     }
   }
@@ -25,20 +25,20 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if("None" || !license){
+  if(license==="None"){
     return "";
   }
   else{
-    if("MIT"){
+    if(license==="MIT"){
       return `[MIT](https://opensource.org/licenses/BSD-3-Clause)`
     }
-    if("BSD"){
+    if(license==="BSD"){
       return `[BSD](https://opensource.org/licenses/BSD-3-Clause)`
     }
-    if("IBM"){
+    if(license==="IBM"){
       return `[IBM](https://opensource.org/licenses/IPL-1.0)`
     }
-    if("ISC"){
+    if(license==="ISC"){
       return `[ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
     }
   }
@@ -48,7 +48,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-if("None" || !license){
+if(license==="None"){
   return "";
 }
 else{
@@ -62,7 +62,7 @@ else{
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.licenses)}
+  ${renderLicenseBadge(data.license)}
   
   ${data.description}
   ## Table of Contents
@@ -89,7 +89,7 @@ function generateMarkdown(data) {
 
       ${data.instruction}
 
-  ${renderLicenseSection(data.licenses)}
+  ${renderLicenseSection(data.license)}
 
   ## Questions
 

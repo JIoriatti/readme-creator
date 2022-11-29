@@ -55,9 +55,9 @@ function init() {
             },
             {
                 type: 'list',
-                message: "Choose which licenses to apply.",
+                message: "Choose which license to apply.",
                 choices: ["None","MIT", "BSD", "IBM", "ISC"],
-                name: 'licenses'
+                name: 'license'
             },
             {
                 type: 'input',
