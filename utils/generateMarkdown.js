@@ -6,19 +6,17 @@ function renderLicenseBadge(license) {
   if(license==="None"){
     return "";
   }
-  else{
-    if(license==="MIT"){
-      return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
-    }
-    if(license==="BSD"){
-      return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
-    }
-    if(license==="IBM"){
-      return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
-    }
-    if(license==="ISC"){
-      return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
-    }
+  if(license==="MIT"){
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  if(license==="BSD"){
+    return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
+  }
+  if(license==="IBM"){
+    return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
+  }
+  if(license==="ISC"){
+    return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
   }
 }
 
@@ -28,19 +26,17 @@ function renderLicenseLink(license) {
   if(license==="None"){
     return "";
   }
-  else{
-    if(license==="MIT"){
-      return `[MIT](https://opensource.org/licenses/BSD-3-Clause)`
-    }
-    if(license==="BSD"){
-      return `[BSD](https://opensource.org/licenses/BSD-3-Clause)`
-    }
-    if(license==="IBM"){
-      return `[IBM](https://opensource.org/licenses/IPL-1.0)`
-    }
-    if(license==="ISC"){
-      return `[ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
-    }
+  if(license==="MIT"){
+    return `[MIT](https://opensource.org/licenses/MIT)`
+  }
+  if(license==="BSD"){
+    return `[BSD](https://opensource.org/licenses/BSD-3-Clause)`
+  }
+  if(license==="IBM"){
+    return `[IBM](https://opensource.org/licenses/IPL-1.0)`
+  }
+  if(license==="ISC"){
+    return `[ISC](https://opensource.org/licenses/ISC)`
   }
 
 }

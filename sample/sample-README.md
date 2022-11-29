@@ -1,6 +1,6 @@
 # Readme Sample
 
-  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   A sample of the README creator application.
   ## Table of Contents
@@ -29,7 +29,7 @@
 
   ## License
 
-  This application is covered under the [MIT](https://opensource.org/licenses/BSD-3-Clause) license.
+  This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 
   ## Questions
 
